@@ -388,11 +388,12 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 100px;
+    padding: 10px;
     margin: 0 40%;
 }
 
 .form-design h2, .personal-info h2{
-    font-weight:bold;
+    font-weight: bold;
     font-size: 25px;
     text-align: center;
     color: var(--subtitleColor);
@@ -409,12 +410,11 @@ body{
 
 .box-info{
     display: inline-block;
-    border-radius: 10px;
     padding: 10px;
     text-align: center;
     box-shadow: 2px 2px 12px var(--shadowColor);
     background: rgb(167, 116, 167);
-    width:220px;
+    width: 200px;
     cursor: pointer;
     margin-left: 30px;
 }
@@ -432,7 +432,7 @@ body{
 .social-media-info{
     font-size: 15px;
     font-style: italic;
-    color: black;
+    color: rgb(43, 0, 25);
     text-shadow: 2px 2px 12px var(--shadowColor);
 }
 

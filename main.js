@@ -1,8 +1,10 @@
+/* ------------------------------ FORM VALIDATION ----------------------------- */
 const slideShowArray = ["./images/slide1.png" , "./images/slide2.png", "./images/slide3.png","./images/slide4.png","./images/slide5.png"]
 
 function showImage(index) {
     document.getElementById("image-to-display").src = slideShowArray[index];
 }
+/* ---------------------------------------------------------------------------- */
 
 /* ----------------------------------- SKILLS  -------------------------------- */
 
@@ -44,16 +46,25 @@ document.getElementById("fillSkill6").style.strokeDashoffset = (320 - (320 * Num
 
 
 /* ------------------------------ FORM VALIDATION ----------------------------- */
-function requiredField() {
+function validateFields() {
+    
     var fullName = document.getElementById("fullNameField").value;
-    var email = document.getElementById("emailField").value;
+    var email = String(document.getElementById("emailField").value).toLowerCase();
     var message = document.getElementById("messageField").value;
-    var emailCheck = /^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/;
-    if ((fullName == "" || email == "" || message == "") || (!(emailCheck.test(email))) || (fullName.length < 5) ) {
-        alert("Por favor, llenar todos los campos de texto correctamente"); 
+    var nameCheckFilter = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var emailCheckFilter = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+    if (fullName == null || email == null || message == null || typeof fullName == 'undefined' || typeof email == 'undefined' || typeof message == 'undefined') {
+        alert("Por favor, llenar todos los campos de texto"); 
+    } 
+    else if (!nameCheckFilter.test(fullName)) {
+        alert("Por favor, ingrese un nombre válido"); 
+    }
+    else if (!emailCheckFilter.test(email)){
+        alert("Por favor, ingrese un correo válido"); 
     }
     else {
-        alert("Su solicitud ha sido enviada");
+        alert("¡Su solicitud ha sido enviada!");
         var formMessage = { guestName: fullName, guestEmail: email, guestMessage: message };
         console.log(formMessage);
     }
