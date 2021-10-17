@@ -40,3 +40,56 @@ body{
     font-weight: 700;
 }
 /* ----------------------------------------------------------------- */ 
+
+/* --------------------------- HERO STYLE ---------------------------*/
+.hero{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideShow-container{
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imagesToChoose{
+    width:500%;
+    height:600px;
+    display: flex;
+}
+
+.imagesToChoose input{
+    position: absolute;
+    visibility: hidden;
+}
+
+#image-to-display{
+    width: 1350px;
+    height: 600px;
+    margin: 8px;
+}
+
+.manual-selection{
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-button{
+    width: 40px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 20px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-button:hover{background: white;}
+
+/* ------------------------------------------------------------------- */

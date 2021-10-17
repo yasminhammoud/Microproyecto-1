@@ -14,16 +14,49 @@
         <nav class="navbar">
             
             <ul class="menu">
-                <li><a href="#">Hero</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contáctame</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE MÍ</a></li>
+                <li><a href="#">EXPERIENCIAS</a></li>
+                <li><a href="#">HABILIDADES</a></li>
+                <li><a href="#">CONTÁCTAME</a></li>
             </ul>
 
         </nav>
         <!--  ----------------------------------------------------------------- -->
+        
+        <!-- --------------------------- Image Slider ------------------------- -->
+        <section class="hero" id="hero">
 
+            <div class="slideShow-container">
+
+                <div class="imagesToChoose">
+
+                    <!-- Radio buttons (to choose image) -->  
+                    <input type="radio" name="option-button" id="option1" value="0" onclick="showImage(this.value)">
+                    <input type="radio" name="option-button" id="option2" value="1" onclick="showImage(this.value)">
+                    <input type="radio" name="option-button" id="option3" value="2" onclick="showImage(this.value)">
+                    <input type="radio" name="option-button" id="option4" value="3" onclick="showImage(this.value)">
+                    <input type="radio" name="option-button" id="option5" value="4" onclick="showImage(this.value)"> 
+
+                    <!-- Slideshow content (Image)-->
+                    <img id="image-to-display" src="" alt="">
+
+                </div>
+
+                <!-- Manual selection -->
+                <div class="manual-selection"> 
+                    <label for="option1" class="manual-button"></label>
+                    <label for="option2" class="manual-button"></label>
+                    <label for="option3" class="manual-button"></label>
+                    <label for="option4" class="manual-button"></label>
+                    <label for="option5" class="manual-button"></label>
+                </div>
+
+            </div>
+
+        </section>
+        <!--  ----------------------------------------------------------------- -->
+        
     </body>
 
     <script src="/main.js"></script>
