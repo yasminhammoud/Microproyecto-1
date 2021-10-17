@@ -93,3 +93,66 @@ body{
 .manual-button:hover{background: white;}
 
 /* ------------------------------------------------------------------- */
+
+/* ------------------------- ABOUT ME STYLE ---------------------------*/
+.about-me{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 216, 255);
+}
+
+.about-me-container{
+    margin: 100px 0;
+    width: 75%;
+    height: 300px;
+    background-color: rgb(196, 139, 196);
+    border-radius: 25px;
+    box-shadow: 2px 2px 12px var(--shadowColor);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img{
+    height: 300px;
+    border-radius: 4%;
+    box-shadow: 2px 2px 12px var(--shadowColor);
+    margin-left: 1.5%;
+}
+
+.text-about-me{
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    font-size: 16px;
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-me-title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    color: var(--titleColor);
+    text-shadow: 2px 2px 12px var(--shadowColor);
+}
+
+#career{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: var(--subtitleColor);
+    text-shadow: 2px 2px 12px var(--shadowColor);
+}
+
+#description-part1, #description-part2, #description-part3{
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    text-shadow: 2px 2px 12px var(--shadowColor);
+    padding: 1%;
+}
+/* ------------------------------------------------------------------- */
