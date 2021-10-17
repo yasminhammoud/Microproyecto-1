@@ -234,7 +234,7 @@ body{
 .skills{
     padding: 10px;
     width: 100%;
-    margin: 50px 0;
+    margin-top: 10px;
 }
 
 .skills-title h1{
@@ -243,6 +243,7 @@ body{
     text-align: center;
     color: var(--titleColor);
     text-shadow: 2px 2px 12px var(--shadowColor);
+    margin-bottom: 20px;
 }
 
 .skills-container{
@@ -269,9 +270,19 @@ body{
 
 .progress{
     position: relative;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.box h2{
+    margin-top: 10px;
+    line-height: 30px;
+    color: var(--subtitleColor);
+}
+
+.number{
+    position: absolute;
 }
 
 .graph{
