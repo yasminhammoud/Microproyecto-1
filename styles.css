@@ -13,7 +13,7 @@
 body{
     max-width: 100%;
     overflow-x: hidden;
-    background: rgb(255, 170, 255);
+    background: rgb(238, 185, 238);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -75,7 +75,6 @@ body{
 #image-to-display{
     width: 1350px;
     height: 600px;
-    margin: 8px;
 }
 
 .manual-selection{
@@ -105,6 +104,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(240, 216, 255);;
 }
 
 .about-me-container{
@@ -235,6 +235,7 @@ body{
     padding: 10px;
     width: 100%;
     margin-top: 10px;
+    background: rgb(240, 216, 255);
 }
 
 .skills-title h1{
@@ -326,4 +327,113 @@ body{
     stroke-dasharray: 320;
     stroke: rgb(186, 125, 186);
 }
+/* ------------------------------------------------------------------- */
+
+/* ------------------------ CONTACT ME STYLE --------------------------*/
+#contact-me-section{
+    padding: 10px;
+    width: 100%;
+}
+
+.title-contact-me h1{
+    font-weight:bolder;
+    font-size: 30px;
+    text-align: center;
+    color: var(--titleColor);
+    text-shadow: 2px 2px 12px var(--shadowColor);
+    line-height: 10px;
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+
+.form-design{
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-design form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.form-design form input, .form-design form textarea, #submit-btn{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(167, 116, 167);
+    color:white;
+    resize: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-design form textarea{
+    min-height: 200px;
+}
+
+.form-design form input::placeholder, 
+.form-design form textarea::placeholder{
+    color: rgba(245, 245, 245, 0.885);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#submit-btn{
+    max-width: 100px;
+    background: rgba(102, 62, 102, 0.919);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100px;
+    margin: 0 40%;
+}
+
+.form-design h2, .personal-info h2{
+    font-weight:bold;
+    font-size: 25px;
+    text-align: center;
+    color: var(--subtitleColor);
+    text-shadow: 2px 2px 12px var(--shadowColor);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.boxes-personal-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-info{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 12px var(--shadowColor);
+    background: rgb(167, 116, 167);
+    width:220px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.box-info:hover{
+    background: rgb(196, 139, 196);
+    font-weight: lighter;
+}
+
+.social-media-icon img{
+    height: 50px;
+    padding: 0px;
+}
+
+.social-media-info{
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 2px 12px var(--shadowColor);
+}
+
 /* ------------------------------------------------------------------- */

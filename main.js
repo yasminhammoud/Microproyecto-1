@@ -41,3 +41,21 @@ document.getElementById("fillSkill4").style.strokeDashoffset = (320 - (320 * Num
 document.getElementById("fillSkill5").style.strokeDashoffset = (320 - (320 * Number(skills.skill5.level)) /100);
 document.getElementById("fillSkill6").style.strokeDashoffset = (320 - (320 * Number(skills.skill6.level)) /100);
 /* ---------------------------------------------------------------------------- */
+
+
+/* ------------------------------ FORM VALIDATION ----------------------------- */
+function requiredField() {
+    var fullName = document.getElementById("fullNameField").value;
+    var email = document.getElementById("emailField").value;
+    var message = document.getElementById("messageField").value;
+    var emailCheck = /^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/;
+    if ((fullName == "" || email == "" || message == "") || (!(emailCheck.test(email))) || (fullName.length < 5) ) {
+        alert("Por favor, llenar todos los campos de texto correctamente"); 
+    }
+    else {
+        alert("Su solicitud ha sido enviada");
+        var formMessage = { guestName: fullName, guestEmail: email, guestMessage: message };
+        console.log(formMessage);
+    }
+}
+/* ---------------------------------------------------------------------------- */
