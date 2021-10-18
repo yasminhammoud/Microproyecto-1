@@ -54,7 +54,7 @@ function validateFields() {
     var nameCheckFilter = /^[a-zA-Z]+ [a-zA-Z]+$/;
     var emailCheckFilter = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
-    if (fullName === "" || email === "" || message === "" || message === none || typeof message === 'undefined') {
+    if (fullName === "" || email === "" || message === "" || message === none) {
         alert("Por favor, llenar todos los campos de texto"); 
     } 
     else if (!nameCheckFilter.test(fullName)) {
