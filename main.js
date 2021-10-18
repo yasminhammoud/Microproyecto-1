@@ -58,10 +58,10 @@ function validateFields() {
         alert("Por favor, llenar todos los campos de texto"); 
     } 
     else if (!nameCheckFilter.test(fullName)) {
-        alert("Por favor, ingrese un nombre válido"); 
+        alert("Por favor, ingrese un nombre válido (Nombre y Apellido)"); 
     }
     else if (!emailCheckFilter.test(email)){
-        alert("Por favor, ingrese un correo válido"); 
+        alert("Por favor, ingrese un correo electrónico válido"); 
     }
     else {
         alert("¡Su solicitud ha sido enviada!");

@@ -216,6 +216,7 @@ body{
     font-weight: bold;
     color: var(--subtitleColor);
     font-size: 25px;
+    padding: 0 2%;
 }
 
 .project-date{
@@ -223,11 +224,13 @@ body{
     font-style: italic;
     font-size: 20px;
     color: rgb(41, 0, 24);
+    padding: 0 2%;
 }
 
 .program-language{
     font-size: 20px;
     color:  rgb(43, 0, 25);
+    padding: 0 2%;
 }
 /* ------------------------------------------------------------------- */
 
